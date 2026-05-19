@@ -1,0 +1,26 @@
+.EmptyStateContainer {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fbfbfb;
+  border: 1px solid #e2e9f0;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  border-radius: 8px;
+}
+
+.EmptyStateTitle {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.EmptyStateDescription {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px;
+}

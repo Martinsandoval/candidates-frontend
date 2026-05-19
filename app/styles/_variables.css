@@ -1,0 +1,80 @@
+:root {
+  /* Primary Button */
+  --emi-primary-color: #024c8c;
+  --emi-primary-color-disabled: #024c8c;
+  --emi-primary-color-hover: #00335f;
+  --emi-primary-color-hover-2: #00335f;
+
+  --emi-primary-color-focus: #0060b4;
+  --emi-primary-color-button-text: #fcfcfd;
+
+  /* Secondary Button */
+  --emi-secondary-color: #fbfbfb;
+  --emi-secondary-color-text: #024c8c;
+  --emi-secondary-border-color: #024c8c1a;
+  --emi-secondary-color-text-disabled: #fbfbfb;
+  --emi-secondary-color-hover: #024c8c1a;
+  --emi-secondary-color-focus: #fbfbfb;
+
+  /* Stepper */
+  --emi-stepper-color: #8b8d98;
+
+  /* Main Panel */
+  --emi-main-panel-bg-color: #fff;
+  --emi-main-panel-text-color: #000;
+
+  /* Icon */
+  --emi-icon-color: #000000;
+  --emi-icon-hover-color: #ebebeb;
+
+  /* Sidebar */
+  --emi-sidebar-bg-color: #f8f8f8;
+  --emi-sidebar-hover-color: #e6edf3;
+  --emi-sidebar-width-lg: 205px;
+  --emi-sidebar-text-color: #000000;
+
+  /* Header */
+  --emi-header-bg-color: #ffffff;
+  --emi-header-text-color: #000000;
+  --emi-header-height: 63px;
+  --emi-header-font-size: 14px;
+  --emi-contract-header-bg: #ffffff;
+
+  /* Font */
+  --emi-font-family: "Lato", sans-serif;
+
+  /* Timing */
+  --emi-timing-fast: 150ms;
+  --emi-timing-normal: 250ms;
+  --emi-timing-slow: 500ms;
+  --emi-timing-slowest: 750ms;
+  --emi-timing-function: cubic-bezier(0.07, 0.91, 0.51, 1);
+
+  /* Status colors: Info, Danger, Warning, Success */
+  --emi-color-success: #00a4337c;
+  --emi-color-info: #e1f6fd;
+  --emi-color-text-info: #003d8d;
+  --emi-color-warning: #ffde003d;
+  --emi-color-text-warning: #ab6400;
+  --emi-color-danger: #e63946;
+  --emi-color-danger-hover: #e3535e;
+  --emi-color-text-danger: #eee8e8;
+  --emi-color-gray: #00005506;
+  --emi-color-toast-success: #00a43393;
+  --emi-color-success-callout: #bff0cea8;
+
+  /* Shadows */
+  --emi-light-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+  --emi-dark-shadow: 0 12px 32px -16px rgba(0, 9, 50, 0.2);
+
+  /* Table */
+  --emi-table-header-color: #f3f7fb;
+
+  /* Chart */
+  --emi-chart-bg-color: #f4f9fc;
+
+  /* Card */
+  --emi-card-bg-color: #f4f9fc;
+
+  --emi-dialog-bg: #fff;
+}

@@ -1,0 +1,42 @@
+.TableHeader {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--emi-main-panel-text-color);
+  line-height: 22px;
+}
+
+.TableDescription {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--emi-main-panel-text-color);
+  line-height: 22px;
+}
+
+.TableTextRow {
+  overflow: hidden;
+  color: var(--emi-main-panel-text-color);
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+.TableLinkRow {
+  overflow: hidden;
+  color: var(--emi-primary-color);
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22.605px;
+  letter-spacing: 0;
+}
+
+.TableRetentionTimes {
+  font-size: 14px;
+  font-weight: 500;
+  color: #707070;
+  line-height: 20px;
+}

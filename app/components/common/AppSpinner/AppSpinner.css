@@ -1,0 +1,84 @@
+.AppSpinnerContainer {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+
+/* ── Wrapper sizes ─────────────────────────────────────────────────────────── */
+
+.AppSpinnerWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.AppSpinnerWrapper--sm {
+  width: 44px;
+  height: 44px;
+}
+
+.AppSpinnerWrapper--md {
+  width: 64px;
+  height: 64px;
+}
+
+.AppSpinnerWrapper--lg {
+  width: 88px;
+  height: 88px;
+}
+
+/* ── Spinning ring ─────────────────────────────────────────────────────────── */
+
+.AppSpinnerRing {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 3px solid var(--blue-a3);
+  border-top-color: var(--blue-9);
+  animation: AppSpinnerRotate 650ms linear infinite;
+}
+
+@keyframes AppSpinnerRotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ── Logo mark ─────────────────────────────────────────────────────────────── */
+
+.AppSpinnerMark {
+  position: relative;
+  z-index: 1;
+  border-radius: 8px;
+  background: var(--blue-9);
+  color: white;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.01em;
+  user-select: none;
+}
+
+.AppSpinnerWrapper--sm .AppSpinnerMark {
+  width: 24px;
+  height: 24px;
+  font-size: 11px;
+  border-radius: 6px;
+}
+
+.AppSpinnerWrapper--md .AppSpinnerMark {
+  width: 34px;
+  height: 34px;
+  font-size: 15px;
+  border-radius: 9px;
+}
+
+.AppSpinnerWrapper--lg .AppSpinnerMark {
+  width: 46px;
+  height: 46px;
+  font-size: 20px;
+  border-radius: 12px;
+}

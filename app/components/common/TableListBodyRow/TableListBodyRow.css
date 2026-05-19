@@ -1,0 +1,23 @@
+.TableListBodyRowSnap {
+  white-space: nowrap;
+}
+
+.TableListBodyRowCenter {
+  text-align: center;
+}
+
+.TableListBodyRowClickable {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.TableListBodyRowClickable:hover {
+  background-color: var(--gray-2);
+}
+
+.TableListBodyRowSnap {
+  position: sticky;
+  left: 0;
+  background-color: inherit;
+  z-index: 1;
+}

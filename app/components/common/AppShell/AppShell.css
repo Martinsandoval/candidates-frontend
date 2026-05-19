@@ -1,0 +1,249 @@
+/* ── Skip link ────────────────────────────────────────────────────────────── */
+
+.SkipToContent {
+  position: absolute;
+  top: -100%;
+  left: 8px;
+  z-index: 9999;
+  padding: 8px 16px;
+  background: var(--blue-9);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 0 0 6px 6px;
+  text-decoration: none;
+  transition: top 120ms ease;
+}
+
+.SkipToContent:focus {
+  top: 0;
+}
+
+/* ── Shell layout ─────────────────────────────────────────────────────────── */
+
+.AppShellRoot {
+  display: flex;
+  height: 100%;
+}
+
+.AppShellBody {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.AppShellContent {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* ── Sidebar ──────────────────────────────────────────────────────────────── */
+
+.AppSidebar {
+  width: 220px;
+  height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--gray-1);
+  border-right: 1px solid var(--gray-a4);
+  transition: width 220ms ease;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+.AppSidebar--collapsed {
+  width: 52px;
+}
+
+/* Logo area */
+.AppSidebarLogo {
+  height: 52px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--gray-a4);
+  flex-shrink: 0;
+}
+
+.AppLogoMark {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 8px;
+  background: var(--blue-9);
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.01em;
+}
+
+.AppLogoMark--sm {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 6px;
+  font-size: 11px;
+}
+
+.AppLogoText {
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 1;
+  max-width: 160px;
+  transition:
+    opacity 150ms ease,
+    max-width 220ms ease;
+}
+
+.AppSidebar--collapsed .AppLogoText {
+  opacity: 0;
+  max-width: 0;
+  pointer-events: none;
+}
+
+/* Nav */
+.AppSidebarNav {
+  flex: 1;
+  padding: 8px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.AppNavItem {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  color: var(--gray-11);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 450;
+  white-space: nowrap;
+  transition:
+    background 120ms ease,
+    color 120ms ease;
+  min-height: 34px;
+}
+
+.AppNavItem:hover {
+  background: var(--gray-a3);
+  color: var(--gray-12);
+}
+
+.AppNavItem:focus-visible {
+  outline: 2px solid var(--blue-8);
+  outline-offset: 1px;
+}
+
+.AppNavItem--active {
+  background: var(--blue-a3);
+  color: var(--blue-11);
+  font-weight: 500;
+}
+
+.AppNavItem--active:hover {
+  background: var(--blue-a4);
+}
+
+.AppNavIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.AppNavLabel {
+  flex: 1;
+  overflow: hidden;
+  opacity: 1;
+  max-width: 160px;
+  transition:
+    opacity 150ms ease,
+    max-width 220ms ease;
+}
+
+.AppSidebar--collapsed .AppNavLabel {
+  opacity: 0;
+  max-width: 0;
+  pointer-events: none;
+}
+
+.AppSidebar--collapsed .AppNavItem {
+  justify-content: center;
+  padding: 7px 0;
+}
+
+/* Toggle button */
+.AppSidebarToggle {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-top: 1px solid var(--gray-a4);
+  color: var(--gray-9);
+  flex-shrink: 0;
+  transition:
+    color 120ms ease,
+    background 120ms ease;
+  width: 100%;
+}
+
+.AppSidebarToggle:hover {
+  color: var(--gray-12);
+  background: var(--gray-a2);
+}
+
+.AppSidebarToggle:focus-visible {
+  outline: 2px solid var(--blue-8);
+  outline-offset: -2px;
+}
+
+.AppSidebarChevron {
+  transition: transform 220ms ease;
+}
+
+.AppSidebarChevron--flipped {
+  transform: rotate(180deg);
+}
+
+/* ── Header ───────────────────────────────────────────────────────────────── */
+
+.AppHeader {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid var(--gray-a4);
+  background: var(--gray-1);
+  flex-shrink: 0;
+}
+
+.AppHeaderInner {
+  height: 100%;
+}
+
+.AppHeaderTitle {
+  white-space: nowrap;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .AppSidebar {
+    width: 52px;
+  }
+}

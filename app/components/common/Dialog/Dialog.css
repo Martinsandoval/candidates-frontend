@@ -1,0 +1,117 @@
+.DialogOverlay {
+  background-color: var(--black-a9);
+  position: fixed;
+  inset: 0;
+  animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  &-danger {
+    border-top: 3px solid #f54b4b;
+  }
+}
+
+.DialogBody {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  max-width: 500px;
+  max-height: 85vh;
+  min-height: 115px;
+  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  display: inline-flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+  border-radius: 12px;
+  background-color: var(--emi-dialog-bg);
+  color: var(--emi-main-panel-text-color);
+
+  box-shadow: 0 12px 32px -16px rgba(0, 9, 50, 0.2);
+}
+
+.DialogBody--info {
+  border-top: 3px solid #2960e8;
+}
+
+.DialogBody--danger {
+  border-top: 3px solid #f54b4b;
+}
+
+.DialogHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  padding-top: 15px;
+}
+
+.DialogTitle {
+  color: var(--emi-main-panel-text-color);
+  margin: 0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 0;
+}
+
+.DialogDescription {
+  color: var(--emi-main-panel-text-color);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  margin: 0;
+  padding: 0;
+}
+
+.DialogContent {
+  padding-bottom: 50px;
+  width: 100%;
+  color: var(--emi-main-panel-text-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.DialogActions {
+  margin-top: 25px;
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.DialogClose {
+  all: unset;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  &:hover,
+  &:focus-within,
+  &:focus {
+    background-color: var(--emi-icon-hover-color);
+  }
+
+  > svg {
+    width: 16px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,115 @@
+.FiltersButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 6px;
+  border: 1px solid var(--gray-a6);
+  background: var(--color-background);
+  color: var(--gray-11);
+  font-size: 14px;
+  font-weight: 450;
+  cursor: pointer;
+  transition:
+    background 120ms ease,
+    border-color 120ms ease,
+    color 120ms ease;
+  white-space: nowrap;
+}
+
+.FiltersButton:hover {
+  background: var(--gray-a2);
+  border-color: var(--gray-a8);
+  color: var(--gray-12);
+}
+
+.FiltersButton:focus-visible {
+  outline: 2px solid var(--blue-8);
+  outline-offset: 2px;
+}
+
+.FiltersPopover .rt-SegmentedControlItem {
+  cursor: pointer;
+}
+
+.FiltersBadge {
+  margin-left: 2px;
+}
+
+.FiltersPopover {
+  width: 300px;
+  padding: 16px;
+}
+
+.FilterSectionLabel {
+  font-size: 11px !important;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--gray-10) !important;
+}
+
+.FiltersClearBtn {
+  font-size: 13px;
+  color: var(--blue-10);
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.FiltersClearBtn:hover {
+  color: var(--blue-11);
+  text-decoration: underline;
+}
+
+/* ── Salary Slider ─────────────────────────────────────────────────────────── */
+
+.SalarySlider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+  touch-action: none;
+  user-select: none;
+}
+
+.SalarySliderTrack {
+  position: relative;
+  flex-grow: 1;
+  border-radius: 9999px;
+  height: 3px;
+  background: var(--gray-5);
+}
+
+.SalarySliderRange {
+  position: absolute;
+  border-radius: 9999px;
+  height: 100%;
+  background: var(--blue-9);
+}
+
+.SalarySliderThumb {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--blue-9);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  transition:
+    border-color 120ms ease,
+    box-shadow 120ms ease;
+}
+
+.SalarySliderThumb:hover {
+  border-color: var(--blue-10);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.SalarySliderThumb:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--blue-a5);
+}

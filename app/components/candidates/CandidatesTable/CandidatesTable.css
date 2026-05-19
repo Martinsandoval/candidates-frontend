@@ -1,0 +1,56 @@
+.CandidatesTableContainer {
+  width: 100%;
+  min-height: 100%;
+  background: var(--color-background);
+  padding: 50px;
+  gap: 15px;
+}
+
+.CandidatesTableHeader {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.CandidateAvatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--blue-3);
+  color: var(--blue-11);
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 0.02em;
+}
+
+.CandidatesColumnsDropdown {
+  width: 220px;
+}
+
+.CopyEmailBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+  color: var(--gray-9);
+  border-radius: var(--radius-1);
+}
+
+.CopyEmailBtn:hover {
+  color: var(--gray-12);
+}
+
+.CandidateCellTruncate {
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
