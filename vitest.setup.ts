@@ -1,3 +1,4 @@
+/// <reference types="vitest/globals" />
 import "@testing-library/jest-dom";
 
 // Radix UI components (DropdownMenu, ScrollArea, etc.) use ResizeObserver internally.
